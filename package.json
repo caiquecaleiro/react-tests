@@ -4,7 +4,8 @@
   "description": "Testing with React + Redux",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --compilers js:babel-core/register --require ./test/testHelper.js --recursive ./test",
+    "test:watch": "npm run test -- --watch",
     "start": "webpack-dev-server"
   },
   "repository": {
@@ -12,7 +13,7 @@
     "url": "git+https://github.com/caiquecaleiro/react-tests.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Caique Caleiro",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/caiquecaleiro/react-tests/issues"
