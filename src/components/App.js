@@ -1,9 +1,11 @@
 import React from 'react';
 
+import CommentBox from './CommentBox';
+
 function App() {
   return (
     <div>
-      React tests!
+      <CommentBox />
     </div>
   );
 }
