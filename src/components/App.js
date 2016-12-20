@@ -5,9 +5,15 @@ import CommentList from './CommentList';
 
 function App() {
   return (
-    <div>
-      <CommentBox />
-      <CommentList />
+    <div className="container">
+      <div className="row">
+        <div className="col-md-6">
+          <CommentBox />
+        </div>
+        <div className="col-md-6">
+          <CommentList />
+        </div>
+      </div>
     </div>
   );
 }
